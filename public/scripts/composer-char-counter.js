@@ -7,6 +7,11 @@ $(document).ready(function() {
     const counter = $(this).closest('.new-tweet').find(".counter");
 
     counter.html(max - length);
+    
+    if (length >= max) {
+      return counter.addClass("max-limit");
+    }
+    return counter.removeClass('max-limit');
   });
 });
 
