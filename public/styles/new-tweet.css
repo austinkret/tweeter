@@ -57,6 +57,7 @@
   align-items: flex-end;
 }
 
+/* MAX CHARACTER LIMIT STYLING */
 .max-limit {
   color: red;
 }
