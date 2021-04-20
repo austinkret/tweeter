@@ -9,12 +9,14 @@ header {
   justify-content: center;
 }
 
-#container {
+.container {
+  margin-top: 45px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#text {
+.text {
   margin: 10px;
+  color: white;
 }

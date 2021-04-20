@@ -12,12 +12,12 @@ nav {
   z-index: -1;
 }
 
-#logo {
+.logo {
   font-family: 'Bungee';
   font-size: xx-large;
 }
 
-#write-new {
+.write-new {
   font-family: 'Source Sans Pro';
   font-size: 1em;
   display: flex;
@@ -25,6 +25,6 @@ nav {
   align-items: center;
 }
 
-#arrows {
+.arrows {
   color: #48BF91;
 }
