@@ -1,5 +1,5 @@
 /* HEADER STYLING AND BACKGROUND IMAGE */
-header {
+.page-header {
   background-color: #242F4D;
   background-image: url("../images/header.background.png");
   background-size: 90%;
@@ -33,7 +33,7 @@ header {
   color: white;
 }
 
-/* LAST NAME COLOR */
+/* LAST NAMECOLOR */
 .last-name {
   color: #48BF91;
 }
