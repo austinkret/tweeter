@@ -1,3 +1,4 @@
+/* HEADER STYLING AND BACKGROUND IMAGE */
 header {
   background-color: #242F4D;
   background-image: url("../images/header.background.png");
@@ -13,22 +14,26 @@ header {
   align-items: center;
 }
 
+/* CONTAINER OF AVATAR AND NAME TEXT */
 .header-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+/* AVATAR SIZING */
 .avatar {
   height: 70%;
   width: 70%;
 }
 
-.text {
+/* NAME TEXT MARGIN, AND COLOR */
+.first-name {
   margin: 10px;
   color: white;
 }
 
-.lastname {
+/* LAST NAME COLOR */
+.last-name {
   color: #48BF91;
 }

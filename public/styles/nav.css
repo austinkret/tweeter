@@ -1,3 +1,4 @@
+/* NAV BAR SPACING, POSITIONING, PADDING, AND FORMATTING */
 nav {
   color: #FFFFFF;
   height: 120px;
@@ -13,11 +14,13 @@ nav {
   z-index: 1;
 }
 
+/* TWEETER LOGO PLACEMENT AND SIZING */
 .logo {
   font-family: 'Bungee';
   font-size: xx-large;
 }
 
+/* WRITE NEW TWEET SIZING AND PLACEMENT */
 .write-new {
   font-family: 'Source Sans Pro';
   font-size: 1em;
@@ -26,10 +29,12 @@ nav {
   align-items: center;
 }
 
+/* NEW TWEET SUB ARROWS COLOR */
 .arrows {
   color: #48BF91;
 }
 
+/* NEW TWEET SUB ARROWS HOVER ANIMATION */
 .arrows:hover {
   cursor: pointer;
   transform: translateY(3px);

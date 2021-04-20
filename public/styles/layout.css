@@ -14,6 +14,7 @@ html {
  * Global layout stuff
  */
 
+ /* BODY STYLING GUIDE */
 body {
   color: #F4F1EC;
   background-color: #F4F1EC;
@@ -21,6 +22,7 @@ body {
   font-family: 'Source Sans Pro';
 }
 
+/* MAIN CONTAINER BELOW HEADER STYLING GUIDE */
 .main-container {
   color: #242F4D;
   width: 90%;

@@ -1,7 +1,9 @@
+/* CONTAINER FOR THE TWEET INPUT, BUTTON, AND CHARACTER COUNTER */
 .new-tweet {
   width: 100%;
 }
 
+/* FORM STYLE FOR THE TWEET INPUT AREA */
 #tweet-text {
   color: #242F4D;
   width: 100%;
@@ -14,6 +16,7 @@
   border-bottom: 5px solid #242F4D;
 }
 
+/* TWEET BUTTON AND CHARACTER COUNTER SPACING AND ALIGNMENT */
 .subitems {
   font-family: 'Bungee';
   width: 100%;
@@ -22,6 +25,7 @@
   justify-content: space-between;
 }
 
+/* TWEET BUTTON STYLING */
 .tweeterbutton {
   padding: 10px;
   border: none;
@@ -31,6 +35,7 @@
   border-radius: 15px;
 }
 
+/* TWEET BUTTON HOVER EFFECT ANIMATION */
 .tweeterbutton:hover {
   padding: 10px;
   border: none;
@@ -43,6 +48,7 @@
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+/* CHARACTER COUNTER STYLING */
 .counter {
   color: #242F4D;
   display: flex;
