@@ -3,6 +3,7 @@
 }
 
 #tweet-text {
+  color: #242F4D;
   width: 100%;
   font-weight: bolder;
   background: transparent;
@@ -24,7 +25,7 @@
 .tweeterbutton {
   padding: 10px;
   border: none;
-  background-color: #4056A1;
+  background-color: #48BF91;
   color: white;
   font-family: 'Bungee';
   border-radius: 15px;
@@ -33,7 +34,7 @@
 .tweeterbutton:hover {
   padding: 10px;
   border: none;
-  background-color: #242F4D;
+  background-color: #318f6b;
   color: white;
   font-family: 'Bungee';
   border-radius: 15px;
