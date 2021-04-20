@@ -26,11 +26,12 @@ nav {
   font-family: 'Bungee';
 }
 
-.container {
+.main-container {
   color: #242F4D;
   width: 90%;
   font-family: 'Source Sans Pro';
   margin: 0 auto;
+  margin-top: 2%;
   display: flex;
   flex-direction: column;
   align-items: center;

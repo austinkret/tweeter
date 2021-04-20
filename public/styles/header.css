@@ -2,18 +2,24 @@ header {
   background-color: #4db4d7;
   background-image: url("https://www.transparenttextures.com/patterns/60-lines.png");
   font-family: 'Source Sans Pro';
-  font-size: 40px;
+  font-size: 30px;
   height: 400px;
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.container {
-  margin-top: 45px;
+.header-container {
+  margin-top: auto;
+  margin-bottom: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.avatar {
+  height: 70%;
+  width: 70%;
 }
 
 .text {
