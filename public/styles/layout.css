@@ -26,6 +26,16 @@ nav {
   font-family: 'Bungee';
 }
 
+.container {
+  color: #242F4D;
+  width: 90%;
+  font-family: 'Source Sans Pro';
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
