@@ -25,15 +25,3 @@ header {
   margin: 10px;
   color: white;
 }
-
-.tweeterbutton:hover {
-  padding: 10px;
-  border: none;
-  background-color: #318f6b;
-  color: white;
-  font-family: 'Bungee';
-  border-radius: 15px;
-  cursor: pointer;
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
