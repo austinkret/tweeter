@@ -31,16 +31,6 @@
   border-radius: 15px;
 }
 
-.tweeterbutton:hover {
-  padding: 10px;
-  border: none;
-  background-color: #318f6b;
-  color: white;
-  font-family: 'Bungee';
-  border-radius: 15px;
-  cursor: pointer;
-}
-
 .counter {
   color: #242F4D;
   display: flex;
