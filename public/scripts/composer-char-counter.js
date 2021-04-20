@@ -4,7 +4,7 @@ $(document).ready(function() {
   $("#tweet-text").keyup(function() {
     const max = 140;
     let length = $(this).val().length;
-    const counter = $(this).closest('.new-tweet').find(".counter");
+    const counter = $(this).siblings("div").children("output");
 
     counter.html(max - length);
     
