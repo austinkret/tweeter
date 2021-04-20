@@ -35,7 +35,6 @@
   <!-- Top nav bar (fixed) -->
   <nav>
     <span class="logo">tweeter</span>
-
     <div class="write-new">
       <span><b>Write </b>a new Tweet</span>
       <div class="arrows">
@@ -45,7 +44,7 @@
   </nav>
 
   <!-- Header Element -->
-  <header>
+  <header class="page-header">
     <div class="header-container">
       <img class="avatar" src="/images/profile-hex.png">
       <div class="first-name">
@@ -66,12 +65,13 @@
         </div>
       </form>
     </section>
-    <h1>Welcome to Tweeter!</h1>
-    <h3><i>This is all just placeholder text for now to ensure the scrolling header works</i></h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-    </p>
+    <div class="thread-container">
+      <header class="tweet-thread">
+        <span class="name">Rhoda Jacobs</span>
+        <span id="username">username</span>
+      </header>
+      <footer><i class="fas fa-flag"></i><i class="fas fa-heart"></i><i class="fas fa-retweet"></i></footer>
+    </div>
   </main>
 </body>
 
