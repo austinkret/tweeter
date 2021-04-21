@@ -39,9 +39,20 @@ const createTweetElement = function(tweetData) {
 };
 
 $(document).ready(function() {
+
   $('form').on('submit', function(event) {
     event.preventDefault();
-    console.log($(this).serialize());
+    
+    if (!$('#tweet-text').val()) {
+      return alert("Well you gotta write something before you tweet!");
+    }
+
+    if ($('#tweet-text').val().length > 140) {
+      return alert("You are a little over the character limit... Try again... But in less words.");
+    }
+    
+
+    
     $.ajax({
       type: "POST",
       url: "/tweets",
@@ -57,7 +68,7 @@ $(document).ready(function() {
       .catch(function(error) {
         console.log("We had trouble making your request due to an error: ", error);
       });
-  };
+    };
+    loadTweets();
 
-  loadTweets();
 });
