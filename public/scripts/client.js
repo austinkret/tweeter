@@ -42,15 +42,14 @@ $(document).ready(function() {
 
   $('form').on('submit', function(event) {
     event.preventDefault();
-    
-    if (!$('#tweet-text').val()) {
-      return alert("Well you gotta write something before you tweet!");
-    }
 
     if ($('#tweet-text').val().length > 140) {
-      return alert("You are a little over the character limit... Try again... But in less words.");
+      return $('.warning').append('<span class="warning">You are a little over the character limit... Try again... But in less words.</span>');
     }
     
+    if ($('#tweets-container').val().length === 0) {
+      return $('.warning').append('<span class="warning">Well you gotta write something before you submit!</span>');
+    }
 
     
     $.ajax({
