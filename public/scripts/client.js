@@ -5,20 +5,39 @@
  */
 
 // TIME A GO FUNCTIONALITY
-// $(document).read(function() {
-//   timeago.render(document.querySelectorAll('.need_to_be_rendered'));
-// });
+$(document).ready(function() {
+  timeago.render(document.querySelectorAll('.need_to_be_rendered'));
+});
 
-const tweetData = {
-  "user": {
-    "name": "Newton",
-    "avatars": "https://i.imgur.com/73hZDYK.png",
-    "handle": "@SirIsaac"
+const tweetData = [
+  {
+    "user": {
+      "name": "Samuel McIntosh",
+      "avatars": "https://i.imgur.com/zxkZZtn.png"
+      ,
+      "handle": "@SamMaccy"
+    },
+    "content": {
+      "text": "I really hate the idea of a European Super League. #MUFC"
+    },
+    "created_at": 1461116232227
   },
-  "content": {
-    "text": "If I have seen further it is by standing on the shoulders of giants"
-  },
-  "created_at": 1461116232227
+  {
+    "user": {
+      "name": "Elina Underwood",
+      "avatars": "https://i.imgur.com/t9Ay1Ab.png",
+      "handle": "@EUnderTheRainbow" },
+    "content": {
+      "text": "Netflix be like 'we know exactly what movie you talkin bout but we ain’t got it lol.'"
+    },
+    "created_at": 1461113959088
+  }
+];
+
+const renderTweets = function(tweets) {
+  for (let values of tweets) {
+    $('#tweets-container').append(createTweetElement(values));
+  }
 };
 
 const createTweetElement = function(tweetData) {
@@ -33,7 +52,7 @@ const createTweetElement = function(tweetData) {
   </header>
   <span class="tweet-post">${tweetData.content.text}</span>
   <footer>
-    <span class="time-stamp" class="need_to_be_rendered" datetime="2016-07-07T09:24:17Z">${tweetData.created_at}</span>
+    <span class="time-stamp" class="need_to_be_rendered" datetime="1473245023718">${tweetData.created_at}</span>
     <div class=" icons">
       <i class="fas fa-flag"></i>
       <i class="fas fa-heart"></i>
@@ -44,11 +63,9 @@ const createTweetElement = function(tweetData) {
   return $tweet;
 };
 
-const myTweet = createTweetElement(tweetData);
 
-console.log(myTweet);
 $(document).ready(function() {
-  $("#tweets-container").append(myTweet);
+  renderTweets(tweetData);
 });
 
 
@@ -57,10 +74,5 @@ $(document).ready(function() {
 
 
 
-// const renderTweets = function(tweets) {
-//   for (let values in tweets) {
-//     $('#tweets-container').append(createTweetElement(values));
-//   }
-// };
-// renderTweets(tweetData);
+
 
