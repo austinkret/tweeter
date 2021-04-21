@@ -14,5 +14,3 @@ $(document).ready(function() {
     return counter.removeClass('max-limit');
   });
 });
-
-$(".counter").change()
