@@ -67,14 +67,17 @@
   color: red;
 }
 
+/* CONTAINER FOR THE TWEETS ONCE POSTED */
 .thread-container {
   border: 5px solid #242F4D;
+  border-radius: 50px;
   height: 200px;
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 
+/* HOVER EFFECT FOR THE THREAD CONTAINER */
 .thread-container:hover {
   border: 5px solid #242F4D;
   height: 200px;
@@ -85,6 +88,7 @@
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
+/* NAME AND USERNAME HEADER IN THE CONTAINER */
 .tweet-thread {
   margin:auto;
   width: 98%;
@@ -93,6 +97,7 @@
   flex-direction: row;
   justify-content: space-between;
 }
+
 
 .user {
   width: 40%;
