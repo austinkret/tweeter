@@ -20,9 +20,14 @@
   outline: none;
   resize: none;
   border-radius: 15px;
+  box-shadow: inset 17px 17px 34px #d4d2cd, inset -17px -17px 34px #ffffff;
+}
+
+/* FORM STYLE WHEN FOCUSED ON */
+#tweet-text:focus {
+  background: #F4F1EC;
   background: linear-gradient(145deg, #fffffd, #dcd9d4);
-  box-shadow:  17px 17px 34px #d4d2cd,
-               -17px -17px 34px #ffffff;
+  box-shadow:  17px 17px 34px #d4d2cd, -17px -17px 34px #ffffff;
 }
 
 /* TWEET BUTTON AND CHARACTER COUNTER SPACING AND ALIGNMENT */
