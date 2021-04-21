@@ -20,7 +20,8 @@
   outline: none;
   resize: none;
   border-radius: 15px;
-  box-shadow: inset 17px 17px 34px #d4d2cd, inset -17px -17px 34px #ffffff;
+  box-shadow: inset 9px 9px 18px #d4d2cd,
+  inset -9px -9px 18px #ffffff;
 }
 
 /* FORM STYLE WHEN FOCUSED ON */
@@ -49,6 +50,7 @@
   color: white;
   font-family: 'Bungee';
   border-radius: 15px;
+  box-shadow: inset 5px 5px 9px #318f6b, inset -5px -5px 9px #4dcc9b;
 }
 
 /* TWEET BUTTON HOVER EFFECT ANIMATION */
@@ -61,7 +63,8 @@
   border-radius: 15px;
   cursor: pointer;
   transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(145deg, #52daa6, #45b88c);
+  box-shadow:  5px 5px 9px #aaaaaa, -5px -5px 9px #f3f3f3;
 }
 
 /* CHARACTER COUNTER STYLING */
