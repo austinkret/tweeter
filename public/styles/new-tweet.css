@@ -71,7 +71,7 @@
 .thread-container {
   border: 5px solid #242F4D;
   border-radius: 50px;
-  height: 200px;
+  height: 240px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -79,11 +79,6 @@
 
 /* HOVER EFFECT FOR THE THREAD CONTAINER */
 .thread-container:hover {
-  border: 5px solid #242F4D;
-  height: 200px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
@@ -120,10 +115,11 @@
   padding-right: 5%;
 }
 
-.tweet-text {
+.tweet-post {
   font-weight: bold;
   margin: auto;
   margin-bottom: 0;
+  margin-top: 0;
   width: 98%;
   padding-bottom: 2%;
   padding-left: 2%;
@@ -135,6 +131,7 @@
 
 footer {
   margin:auto;
+  margin-bottom: 20px;
   width: 98%;
   display: flex;
   align-items: center;
