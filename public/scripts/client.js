@@ -5,34 +5,9 @@
  */
 
 // TIME A GO FUNCTIONALITY
-$(document).ready(function() {
-  timeago.render(document.querySelectorAll('.need_to_be_rendered'));
-});
-
-const tweetData = [
-  {
-    "user": {
-      "name": "Samuel McIntosh",
-      "avatars": "https://i.imgur.com/zxkZZtn.png"
-      ,
-      "handle": "@SamMaccy"
-    },
-    "content": {
-      "text": "I really hate the idea of a European Super League. #MUFC"
-    },
-    "created_at": 1461116232227
-  },
-  {
-    "user": {
-      "name": "Elina Underwood",
-      "avatars": "https://i.imgur.com/t9Ay1Ab.png",
-      "handle": "@EUnderTheRainbow" },
-    "content": {
-      "text": "Netflix be like 'we know exactly what movie you talkin bout but we ain’t got it lol.'"
-    },
-    "created_at": 1461113959088
-  }
-];
+// $(document).ready(function() {
+//   timeago.render(document.querySelectorAll('.need_to_be_rendered'));
+// });
 
 const renderTweets = function(tweets) {
   for (let values of tweets) {
@@ -63,16 +38,26 @@ const createTweetElement = function(tweetData) {
   return $tweet;
 };
 
-
 $(document).ready(function() {
-  renderTweets(tweetData);
+  $('form').on('submit', function(event) {
+    event.preventDefault();
+    console.log($(this).serialize());
+    $.ajax({
+      type: "POST",
+      url: "/tweets",
+      data: $(this).serialize(),
+    });
+  });
+
+  const loadTweets = function() {
+    $.getJSON('/tweets', { method: 'GET'})
+      .then(function(data) {
+        renderTweets(data);
+      })
+      .catch(function(error) {
+        console.log("We had trouble making your request due to an error: ", error);
+      });
+  };
+
+  loadTweets();
 });
-
-
-
-
-
-
-
-
-
