@@ -93,7 +93,7 @@
   justify-content: space-between;
 }
 
-
+/* USER AVATAR IMAGE AND NAME IN THE HEADER CONTAINER */
 .user {
   width: 40%;
   display: flex;
@@ -101,6 +101,7 @@
   align-items: center;
 }
 
+/* AVATAR IMAGE IN THE USER */
 .avatar-thread {
   height: 80px;
   width: 80px;
@@ -108,6 +109,7 @@
   margin-right: 5%;
 }
 
+/* USERNAME ELEMENT IN THE HEADER OF THE CONTAINER */
 .username {
   color: rgb(163, 163, 163);
   font-weight: lighter;
@@ -115,6 +117,7 @@
   padding-right: 5%;
 }
 
+/* POSTED TWEET FORMATTING IN THE CONTAINER */
 .tweet-post {
   font-weight: bold;
   margin: auto;
@@ -129,6 +132,7 @@
   align-items: center;
 }
 
+/* FOOTER OF THE CONTAINER, HOLDING THE DATE POSTED AND THE ICONS */
 footer {
   margin:auto;
   margin-bottom: 20px;
@@ -139,6 +143,7 @@ footer {
   justify-content: space-between;
 }
 
+/* ICONS FOR FLAG, LIKE, AND RE-TWEET */
 .icons {
   color: #48BF91;
   width: 170px;
@@ -149,24 +154,28 @@ footer {
   justify-content: space-between;
 }
 
+/* FLAG HOVER ANIMATION */
 .fa-flag:hover {
   color: #318f6b;
   transform: translateY(-3px);
   text-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+/* HEART HOVER ANIMATION */
 .fa-heart:hover {
   color: #318f6b;
   transform: translateY(-3px);
   text-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+/* RETWEET HOVER ANIMATION */
 .fa-retweet:hover {
   color: #318f6b;
   transform: translateY(-3px);
   text-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+/* TIME STAMP IN THE FOOTER DOCUMENT */
 .time-stamp {
   padding-left: 2%;
   font-size: 16px;
