@@ -81,9 +81,10 @@
   color: red;
   font-family: 'Source Sans Pro';
   font-weight: bold;
-  font-size: 2vw;
+  font-size: 1.5vw;
   display: flex;
-  justify-content: center
+  justify-content: center;
+  text-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .success {
@@ -92,7 +93,8 @@
     font-weight: bold;
     font-size: 2vw;
     display: flex;
-    justify-content: center
+    justify-content: center;
+    text-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* MAX CHARACTER LIMIT STYLING */
@@ -209,6 +211,14 @@ footer {
   color: #318f6b;
   transform: translateY(-3px);
   text-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.fa-check-circle {
+  padding-right: 10px;
+}
+
+.fa-exclamation-triangle {
+  padding-right: 10px;
 }
 
 /* TIME STAMP IN THE FOOTER DOCUMENT */
