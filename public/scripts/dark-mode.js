@@ -15,7 +15,7 @@ $(document).ready(function() {
       $(".tweet-text-dark").toggleClass("tweet-text");
       $(".thread-container-dark").toggleClass("thread-container");
     });
-  } else {
+  } else if (!body.classList.contains('body-dark')) {
     $(".darkmode").click(function() { // darkmode for headline body, adds css styles on click
       $("body").toggleClass("body-dark");
       $(".counter").toggleClass("counter-dark");
