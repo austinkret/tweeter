@@ -104,10 +104,7 @@
     text-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* MAX CHARACTER LIMIT STYLING */
-.max-limit {
-  color: red;
-}
+
 
 /* CONTAINER FOR THE TWEETS ONCE POSTED */
 .thread-container {
@@ -354,4 +351,9 @@ footer {
   color: #F4F1EC;
   padding-left: 2%;
   font-size: 16px;
+}
+
+/* MAX CHARACTER LIMIT STYLING */
+.max-limit {
+  color: red;
 }
