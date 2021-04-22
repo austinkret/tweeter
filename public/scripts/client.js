@@ -5,13 +5,13 @@
  */
 
 // TIME A GO FUNCTIONALITY
-// $(document).ready(function() {
-//   timeago.render(document.querySelectorAll('.need_to_be_rendered'));
-// });
+$(document).ready(function() {
+  timeago.render(document.querySelectorAll('.need_to_be_rendered'));
+});
 
 const renderTweets = function(tweets) {
   for (let values of tweets) {
-    $('#tweets-container').append(createTweetElement(values));
+    $('#tweets-container').prepend(createTweetElement(values));
   }
 };
 
@@ -46,8 +46,8 @@ $(document).ready(function() {
     if ($('#tweet-text').val().length > 140) {
       return $('.warning').append('<span class="warning">You are a little over the character limit... Try again... But in less words.</span>');
     }
-    
-    if ($('#tweets-container').val().length === 0) {
+
+    if (!$('#tweet-text').val().length) {
       return $('.warning').append('<span class="warning">Well you gotta write something before you submit!</span>');
     }
 
@@ -56,18 +56,26 @@ $(document).ready(function() {
       type: "POST",
       url: "/tweets",
       data: $(this).serialize(),
+    }).then(function() {
+      $.getJSON('/tweets', { method: 'GET'})
+        .done(function(data) {
+          loadTweets(data);
+          $('form')[0].reset();
+        });
+    }).fail(function(error) {
+      console.log("We had trouble making your request due to an error: ", error);
     });
   });
-
+  
   const loadTweets = function() {
     $.getJSON('/tweets', { method: 'GET'})
-      .then(function(data) {
+      .done(function(data) {
         renderTweets(data);
       })
-      .catch(function(error) {
+      .fail(function(error) {
         console.log("We had trouble making your request due to an error: ", error);
       });
-    };
-    loadTweets();
+  };
+  loadTweets();
 
 });
