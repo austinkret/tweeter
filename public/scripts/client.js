@@ -50,7 +50,7 @@ $(document).ready(function() {
     }
 
     if (!$('#tweet-text').val().length) {
-      return $('.warning').append('<span class="warning"><i class="fas fa-exclamation-triangle"></i>Well you gotta write something before you submit!</span>').hide().fadeIn();
+      return $('.warning').append('<span class="warning"><i class="fas fa-exclamation-triangle"></i>Well you gotta write something before you hit tweet!</span>').hide().fadeIn();
     }
 
     
