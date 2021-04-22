@@ -8,7 +8,7 @@ $(document).ready(function() {
 
     counter.html(max - length);
     
-    if (length >= max) {
+    if (length > max) {
       return counter.addClass("max-limit");
     }
     return counter.removeClass('max-limit');
