@@ -4,11 +4,6 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
-// TIME A GO FUNCTIONALITY
-$(document).ready(function() {
-  timeago.render(document.querySelectorAll('.need_to_be_rendered'));
-});
-
 const renderTweets = function(tweets) {
   for (let values of tweets) {
     $('#tweets-container').prepend(createTweetElement(values));
@@ -27,7 +22,7 @@ const createTweetElement = function(tweetData) {
   </header>
   <span class="tweet-post">${tweetData.content.text}</span>
   <footer>
-    <span class="time-stamp" class="need_to_be_rendered" datetime="1473245023718">${tweetData.created_at}</span>
+    <span class="time-stamp" class="need_to_be_rendered" datetime="1473245023718">${timeago.format(tweetData.created_at)}</span>
     <div class=" icons">
       <i class="fas fa-flag"></i>
       <i class="fas fa-heart"></i>
