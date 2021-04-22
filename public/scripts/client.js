@@ -20,28 +20,52 @@ const escape = function(str) {
 
 // CREATE TWEET FUNCTION
 const createTweetElement = function(tweetData) {
-  const $tweet =
-  `<article id="thread-container">
-  <header class="tweet-thread">
-    <div class="user">
-      <img class="avatar-thread" src="${tweetData.user.avatars}">
-      <span class="name">${tweetData.user.name}</span>
-    </div>
-    <span class="username">${tweetData.user.handle}</span>
-  </header>
-  <span class="tweet-post">${escape(tweetData.content.text)}</span>
-  <footer>
-    <span class="time-stamp" class="need_to_be_rendered" datetime="1473245023718">${timeago.format(tweetData.created_at)}</span>
-    <div class=" icons">
-      <i class="fas fa-flag"></i>
-      <i class="fas fa-heart"></i>
-      <i class="fas fa-retweet"></i>
-    </div>
-  </footer>
-</article>`;
-  return $tweet;
-};
+  const body = document.querySelector('body');
 
+  if (body.classList.contains('body-dark')) {
+    const $tweet =
+    `<article class="thread-container-dark">
+    <header class="tweet-thread-dark">
+      <div class="user-dark">
+        <img class="avatar-thread" src="${tweetData.user.avatars}">
+        <span class="name">${tweetData.user.name}</span>
+      </div>
+      <span class="username">${tweetData.user.handle}</span>
+    </header>
+    <span class="tweet-post-dark">${escape(tweetData.content.text)}</span>
+    <footer>
+      <span class="time-stamp-dark" class="need_to_be_rendered" datetime="1473245023718">${timeago.format(tweetData.created_at)}</span>
+      <div class=" icons">
+        <i class="fas fa-flag"></i>
+        <i class="fas fa-heart"></i>
+        <i class="fas fa-retweet"></i>
+      </div>
+    </footer>
+  </article>`;
+    return $tweet;
+  } else if (!body.classList.contains('body-dark')) {
+    const $tweet =
+    `<article class="thread-container">
+    <header class="tweet-thread">
+      <div class="user">
+        <img class="avatar-thread" src="${tweetData.user.avatars}">
+        <span class="name">${tweetData.user.name}</span>
+      </div>
+      <span class="username">${tweetData.user.handle}</span>
+    </header>
+    <span class="tweet-post">${escape(tweetData.content.text)}</span>
+    <footer>
+      <span class="time-stamp" class="need_to_be_rendered" datetime="1473245023718">${timeago.format(tweetData.created_at)}</span>
+      <div class=" icons">
+        <i class="fas fa-flag"></i>
+        <i class="fas fa-heart"></i>
+        <i class="fas fa-retweet"></i>
+      </div>
+    </footer>
+  </article>`;
+    return $tweet;
+  }
+};
 // DOCUMENT READY CALL
 $(document).ready(function() {
 
@@ -52,12 +76,12 @@ $(document).ready(function() {
     $('.warning').empty();
 
     // IF THE CHARACTER LENGTH EXCEEDS 140, APPEND WARNING LABEL
-    if ($('#tweet-text').val().length > 140) {
+    if ($('.tweet-text').val().length > 140) {
       return $('.warning').append('<span class="warning"><i class="fas fa-exclamation-triangle"></i>You are a little over the character limit... Try again... But in less words.</span>').hide().fadeIn();
     }
 
     // IF THERE INPUT IS EMPTY, APPEND WARNING CLASS
-    if (!$('#tweet-text').val().length) {
+    if (!$('.tweet-text').val().length) {
       return $('.warning').append('<span class="warning"><i class="fas fa-exclamation-triangle"></i>Well you gotta write something before you hit tweet!</span>').hide().fadeIn();
     }
 
@@ -74,6 +98,8 @@ $(document).ready(function() {
           loadTweets(data);
           // RESET THE FORM TO EMPTY SO USER CAN TWEET AGAIN WITHOUT HAVING TO MANUALLY CLEAR THE FORM
           $('form')[0].reset();
+          // RESET CHARACTER COUNTER ON SUCCESSFUL SUBMIT
+          $('.counter').text('140');
           // APPEND A SUCCESS MESSAGE SO USER KNOWS THEIR TWEET WAS SUCCESSFUL
           return $('.warning').append('<span class="success"><i class="fas fa-check-circle"></i>Success! Look below for your tweet!</span>').hide().fadeIn();
         });
