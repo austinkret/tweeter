@@ -1,3 +1,4 @@
+/* WIDTH CONTROL OF MAIN CONTAINER */
 .main-container {
   width: 90%;
 }
@@ -8,6 +9,7 @@
   width: 100%;
 }
 
+/* CONTAINER FOR ALL THE TWEETS IN THE THREAD */
 #tweets-container {
   width: 100%;
 }
@@ -58,6 +60,7 @@
   z-index: 1;
 }
 
+/* TWEET BUTTON ACTIVE EFFECT WHEN CLICKED ON */
 .tweeterbutton:active {
   transform: translateY(-3px);
   background: linear-gradient(145deg, #52daa6, #45b88c);
@@ -65,6 +68,7 @@
   z-index: 1;
 }
 
+/* ENSURE THERE IS NO UNWANTED OUTLINE ON THE BUTTON WHEN FOCUSED */
 .tweeterbutton:focus {
   outline: none;
 }
@@ -77,6 +81,7 @@
   align-items: flex-end;
 }
 
+/* WARNING STYLE FOR CHARACTER COUNT MESSAGE */
 .warning {
   color: red;
   font-family: 'Source Sans Pro';
@@ -87,6 +92,7 @@
   text-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+/* SUCCESS STYLE FOR TWEET SUBMISSION */
 .success {
     color: #45b88c;
     font-family: 'Source Sans Pro';
@@ -213,10 +219,12 @@ footer {
   text-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+/* SUCCESS ICON */
 .fa-check-circle {
   padding-right: 10px;
 }
 
+/* WARNING ICON */
 .fa-exclamation-triangle {
   padding-right: 10px;
 }
