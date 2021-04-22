@@ -17,15 +17,23 @@ nav {
 .nav-scrolled {
   background-image: url("../images/header.background.png");
   background-size: 80%;
-  opacity: 100%;
-  height: 120px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.nav-avatar {
+  height: 100px;
+  width: 100px;
 }
 
 /* TWEETER LOGO PLACEMENT AND SIZING */
 .logo {
   font-family: 'Bungee';
   font-size: xx-large;
+}
+
+.logo:hover {
+  transform: translateY(-3px);
+  text-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* WRITE NEW TWEET SIZING AND PLACEMENT */
@@ -47,5 +55,5 @@ nav {
   color: #318f6b;
   cursor: pointer;
   transform: translateY(3px);
-  text-shadow: 
+  text-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
