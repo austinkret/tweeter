@@ -4,18 +4,21 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
+// RENDER TWEETS FUNCTION
 const renderTweets = function(tweets) {
   for (let values of tweets) {
     $('#tweets-container').prepend(createTweetElement(values));
   }
 };
 
-const escape = function (str) {
+// PREVENT UNWANTED CROSS-SITE SCRIPTING
+const escape = function(str) {
   let div = document.createElement("div");
   div.appendChild(document.createTextNode(str));
   return div.innerHTML;
 };
 
+// CREATE TWEET FUNCTION
 const createTweetElement = function(tweetData) {
   const $tweet =
   `<article id="thread-container">
@@ -39,37 +42,48 @@ const createTweetElement = function(tweetData) {
   return $tweet;
 };
 
+// DOCUMENT READY CALL
 $(document).ready(function() {
 
+  // ON SUBMIT OF THE FORM FUNCTION
   $('form').on('submit', function(event) {
     event.preventDefault();
+    // ENSURE EMPTY WARNING CLASS
     $('.warning').empty();
 
+    // IF THE CHARACTER LENGTH EXCEEDS 140, APPEND WARNING LABEL
     if ($('#tweet-text').val().length > 140) {
       return $('.warning').append('<span class="warning"><i class="fas fa-exclamation-triangle"></i>You are a little over the character limit... Try again... But in less words.</span>').hide().fadeIn();
     }
 
+    // IF THERE INPUT IS EMPTY, APPEND WARNING CLASS
     if (!$('#tweet-text').val().length) {
       return $('.warning').append('<span class="warning"><i class="fas fa-exclamation-triangle"></i>Well you gotta write something before you hit tweet!</span>').hide().fadeIn();
     }
 
-    
+    // AJAX CALL TO SUBMIT THE TWEET INTO THE THREAD BELOW WITHOUT REFRESH
     $.ajax({
       type: "POST",
       url: "/tweets",
       data: $(this).serialize(),
     }).then(function() {
+      // GETJSON AS THE INPUT VALUE WILL BE A JSON ELEMENT
       $.getJSON('/tweets', { method: 'GET'})
         .done(function(data) {
+          // WHEN DONE, LOAD TWEETS
           loadTweets(data);
+          // RESET THE FORM TO EMPTY SO USER CAN TWEET AGAIN WITHOUT HAVING TO MANUALLY CLEAR THE FORM
           $('form')[0].reset();
+          // APPEND A SUCCESS MESSAGE SO USER KNOWS THEIR TWEET WAS SUCCESSFUL
           return $('.warning').append('<span class="success"><i class="fas fa-check-circle"></i>Success! Look below for your tweet!</span>').hide().fadeIn();
         });
+      // IF FAIL, DISPLAY MESSAGE ALONG WITH THE ERROR
     }).fail(function(error) {
       console.log("We had trouble making your request due to an error: ", error);
     });
   });
   
+  // LOAD TWEETS FUNCTION
   const loadTweets = function() {
     $.getJSON('/tweets', { method: 'GET'})
       .done(function(data) {
