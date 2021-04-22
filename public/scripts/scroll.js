@@ -12,8 +12,10 @@ $(document).ready(function() {
       console.log(entry.target);
       if (!entry.isIntersecting) {
         nav.classList.add("nav-scrolled");
+        $('.mini-avatar').append('<img class="nav-avatar" src="/images/profile-hex.png">').hide().fadeIn();
       } else {
         nav.classList.remove("nav-scrolled");
+        $('.mini-avatar').empty().hide().fadeIn();
       }
     });
   },
