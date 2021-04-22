@@ -37,6 +37,7 @@ $(document).ready(function() {
 
   $('form').on('submit', function(event) {
     event.preventDefault();
+    $('.warning').empty();
 
     if ($('#tweet-text').val().length > 140) {
       return $('.warning').append('<span class="warning">You are a little over the character limit... Try again... But in less words.</span>');
@@ -56,6 +57,7 @@ $(document).ready(function() {
         .done(function(data) {
           loadTweets(data);
           $('form')[0].reset();
+          return $('.warning').append('<span class="success">Success! Look below for your tweet!</span>');
         });
     }).fail(function(error) {
       console.log("We had trouble making your request due to an error: ", error);
