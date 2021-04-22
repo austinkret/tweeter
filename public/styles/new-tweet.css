@@ -33,7 +33,6 @@
   font-family: 'Bungee';
   width: 100%;
   margin-top: 10px;
-  margin-bottom: 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -48,19 +47,26 @@
   font-family: 'Bungee';
   border-radius: 15px;
   box-shadow: inset 5px 5px 9px #318f6b, inset -5px -5px 9px #4dcc9b;
+  z-index: 1;
 }
 
 /* TWEET BUTTON HOVER EFFECT ANIMATION */
 .tweeterbutton:hover {
-  padding: 10px;
-  border: none;
-  color: white;
-  font-family: 'Bungee';
-  border-radius: 15px;
-  cursor: pointer;
   transform: translateY(-3px);
   background: linear-gradient(145deg, #52daa6, #45b88c);
   box-shadow:  5px 5px 9px #aaaaaa, -5px -5px 9px #f3f3f3;
+  z-index: 1;
+}
+
+.tweeterbutton:active {
+  transform: translateY(-3px);
+  background: linear-gradient(145deg, #52daa6, #45b88c);
+  box-shadow: inset 5px 5px 9px #318f6b, inset -5px -5px 9px #4dcc9b;
+  z-index: 1;
+}
+
+.tweeterbutton:focus {
+  outline: none;
 }
 
 /* CHARACTER COUNTER STYLING */
@@ -71,6 +77,24 @@
   align-items: flex-end;
 }
 
+.warning {
+  color: red;
+  font-family: 'Source Sans Pro';
+  font-weight: bold;
+  font-size: 2vw;
+  display: flex;
+  justify-content: center
+}
+
+.success {
+    color: #45b88c;
+    font-family: 'Source Sans Pro';
+    font-weight: bold;
+    font-size: 2vw;
+    display: flex;
+    justify-content: center
+}
+
 /* MAX CHARACTER LIMIT STYLING */
 .max-limit {
   color: red;
@@ -78,7 +102,7 @@
 
 /* CONTAINER FOR THE TWEETS ONCE POSTED */
 #thread-container {
-  margin-bottom: 30px;
+  margin: 30px 0px 30px 0px;
   border-radius: 50px;
   height: 240px;
   width: 100%;
