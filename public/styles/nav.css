@@ -14,6 +14,14 @@ nav {
   z-index: 100;
 }
 
+.nav-scrolled {
+  background-image: url("../images/header.background.png");
+  background-size: 80%;
+  opacity: 100%;
+  height: 120px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
 /* TWEETER LOGO PLACEMENT AND SIZING */
 .logo {
   font-family: 'Bungee';
@@ -39,5 +47,5 @@ nav {
   color: #318f6b;
   cursor: pointer;
   transform: translateY(3px);
-  text-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  text-shadow: 
 }
