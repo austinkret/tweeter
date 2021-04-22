@@ -10,6 +10,12 @@ const renderTweets = function(tweets) {
   }
 };
 
+const escape = function (str) {
+  let div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+};
+
 const createTweetElement = function(tweetData) {
   const $tweet =
   `<article id="thread-container">
@@ -20,7 +26,7 @@ const createTweetElement = function(tweetData) {
     </div>
     <span class="username">${tweetData.user.handle}</span>
   </header>
-  <span class="tweet-post">${tweetData.content.text}</span>
+  <span class="tweet-post">${escape(tweetData.content.text)}</span>
   <footer>
     <span class="time-stamp" class="need_to_be_rendered" datetime="1473245023718">${timeago.format(tweetData.created_at)}</span>
     <div class=" icons">
