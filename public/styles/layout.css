@@ -22,9 +22,27 @@ body {
   font-family: 'Source Sans Pro';
 }
 
+body.body-dark {
+  color: #232938;
+  background-color: #232938;
+  font-size: 24px;
+  font-family: 'Source Sans Pro';
+}
+
 /* MAIN CONTAINER BELOW HEADER STYLING GUIDE */
 .main-container {
   color: #242F4D;
+  width: 90%;
+  font-family: 'Source Sans Pro';
+  margin: 0 auto;
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-container-dark {
+  color: #F4F1EC;
   width: 90%;
   font-family: 'Source Sans Pro';
   margin: 0 auto;
