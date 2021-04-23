@@ -13,6 +13,7 @@
   justify-content: center;
   align-items: center;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 
 /* CONTAINER OF AVATAR AND NAME TEXT */
@@ -39,6 +40,10 @@
   color: #48BF91;
 }
 
+
+/* RESPONSIVE DESIGN ELEMENTS */
+
+/* DESKTOP FORMATTED ABOVE 1024PX */
 @media only screen and (min-width: 1024px) {
   .page-header {
     width: 30%;
@@ -77,6 +82,7 @@
   }
 }
 
+/* 600PX WIDE FORMATTED */
 @media only screen and (max-width: 600px) {
   .page-header {
     height: 600px;
