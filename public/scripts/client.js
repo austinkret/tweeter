@@ -15,7 +15,10 @@ $(document).ready(function() {
 
   // CREATE TWEET FUNCTION
   const createTweetElement = function(tweetData) {
-    const $tweet =
+    const body = document.querySelector('body');
+
+    if (!body.classList.contains('body-dark')) {
+      const $tweet =
   `<article class="thread-container">
   <header class="tweet-thread">
     <div class="user">
@@ -29,12 +32,34 @@ $(document).ready(function() {
     <span class="time-stamp" class="need_to_be_rendered" datetime="1473245023718">${timeago.format(tweetData.created_at)}</span>
     <div class=" icons">
       <i class="fas fa-flag"></i>
-      <i class="fas fa-heart"></i>
       <i class="fas fa-retweet"></i>
+      <i class="fas fa-heart"></i>
     </div>
   </footer>
 </article>`;
-    return $tweet;
+      return $tweet;
+    } else {
+      const $tweet =
+      `<article class="thread-container thread-container-dark">
+      <header class="tweet-thread tweet-thread-dark">
+        <div class="user user-dark">
+          <img class="avatar-thread" src="${tweetData.user.avatars}">
+          <span class="name">${tweetData.user.name}</span>
+        </div>
+        <span class="username">${tweetData.user.handle}</span>
+      </header>
+      <span class="tweet-post tweet-post-dark">${escape(tweetData.content.text)}</span>
+      <footer>
+        <span class="time-stamp time-stamp-dark" class="need_to_be_rendered" datetime="1473245023718">${timeago.format(tweetData.created_at)}</span>
+        <div class=" icons">
+          <i class="fas fa-flag"></i>
+          <i class="fas fa-heart"></i>
+          <i class="fas fa-retweet"></i>
+        </div>
+      </footer>
+    </article>`;
+      return $tweet;
+    }
   };
 
   // RENDER TWEETS FUNCTION
