@@ -14,12 +14,14 @@ nav {
   z-index: 100;
 }
 
+/* NAV FORMATTING ONCE IT HITS THE SCROLLED INTERSECTION OBSERVATION POINT, ADDS READABILITY WHEN SCROLLING*/
 .nav-scrolled {
   background-image: url("../images/header.background.png");
   background-size: 80%;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
+/* ADDED AVATR TO THE NAV BAR WHEN SCROLLING */
 .nav-avatar {
   height: 100px;
   width: 100px;
@@ -31,9 +33,15 @@ nav {
   font-size: xx-large;
 }
 
+/* EFFECT WHEN HOVER OVER THE LOGO */
 .logo:hover {
   transform: translateY(-3px);
   text-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* GROUPING NAV ELEMENT FOR THE DARK MODE BUTTON AND WRITE NEW TWEET */
+.nav-right {
+  display: flex;
 }
 
 /* WRITE NEW TWEET SIZING AND PLACEMENT */
@@ -58,6 +66,57 @@ nav {
   text-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+/* DARK MODE BUTTON STYLING */
+.darkmode {
+  margin-left: 15px;
+  background-color: #48BF91;
+  border-radius: 5px;
+  box-shadow: inset 5px 5px 9px #318f6b, inset -5px -5px 9px #4dcc9b;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+  display: flex;
+  align-items: center;
+}
+
+/* DARK MODE BUTTON SUN ICON STYLING */
+.fa-sun {
+  color: white;
+  background-repeat:no-repeat;
+}
+
+/* EFFECT WHEN HOVER OVER DARK MODE BUTTON */
+.darkmode:hover {
+  margin-left: 15px;
+  background-color: #48BF91;
+  border-radius: 5px;
+  transform: translateY(-3px);
+  background: linear-gradient(145deg, #52daa6, #45b88c);
+  box-shadow:  5px 5px 9px #13161e, -5px -5px 9px #333c52;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+}
+
+/* EFFECT WHEN DARK MODE BUTTON IS PRESSED IN */
+.darkmode:active {
+  margin-left: 15px;
+  background-color: #48BF91;
+  border-radius: 5px;
+  transform: translateY(1px);
+  background: linear-gradient(145deg, #52daa6, #45b88c);
+  box-shadow: inset 5px 5px 9px #318f6b, inset -5px -5px 9px #4dcc9b;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+}
+
+/* RESPONSIVE DESIGN STYLING */
+
+/* RESPONSIVE DESIGN FOR DESKTOP AND SCREENS OVER 1024PX */
 @media only screen and (min-width: 1024px) {
   nav {
     background-image: url("../images/header.background.png");
@@ -66,6 +125,7 @@ nav {
   }
 }
 
+/* RESPONSIVE CHANGE WHEN SMALLER THAN 450PX */
 @media only screen and (max-width: 450px) {
   .logo {
     font-size: x-large;
