@@ -1,24 +1,46 @@
 [
   {
     "user": {
-      "name": "Newton",
-      "avatars": "https://i.imgur.com/73hZDYK.png",
-      "handle": "@SirIsaac"
+      "name": "Samuel McIntosh",
+      "avatars": "https://i.imgur.com/zxkZZtn.png",
+      "handle": "@SamMaccy"
     },
     "content": {
-      "text": "If I have seen further it is by standing on the shoulders of giants"
+      "text": "I really hate the idea of a European Super League. #MUFC"
     },
-    "created_at": 1618794741761
+    "created_at": 1618789763239
   },
   {
     "user": {
-      "name": "Descartes",
-      "avatars": "https://i.imgur.com/nlhLi3I.png",
-      "handle": "@rd"
+      "name": "Elina Underwood",
+      "avatars": "https://i.imgur.com/t9Ay1Ab.png",
+      "handle": "@EUnderTheRainbow"
     },
     "content": {
-      "text": "Je pense , donc je suis"
+      "text": "Netflix be like 'we know exactly what movie you talkin bout but we ain’t got it lol."
     },
-    "created_at": 1618881141761
+    "created_at": 1618876163239
+  },
+  {
+    "user": {
+      "name": "Ajit Warner",
+      "avatars": "https://i.imgur.com/NKwNQ0y.png",
+      "handle": "@WarnerA"
+    },
+    "content": {
+      "text": "I wish I had as much style and this user interface!"
+    },
+    "created_at": 1618962563239
+  },
+  {
+    "user": {
+      "name": "Camilla Franklin",
+      "avatars": "https://i.imgur.com/PpjUv8z.png",
+      "handle": "@CaFranklin"
+    },
+    "content": {
+      "text": "Look at me, my first ever Tweeter! #SoExcited"
+    },
+    "created_at": 1619048963239
   }
 ]
