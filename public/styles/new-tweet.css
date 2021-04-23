@@ -43,8 +43,7 @@
   font-family: 'Bungee';
   border-radius: 15px;
   background: linear-gradient(145deg, #52daa6, #45b88c);
-  box-shadow:  5px 5px 15px #adadad,
-               -5px -5px 15px #ececec;
+  box-shadow:  5px 5px 15px #adadad, -5px -5px 15px #ececec;
   z-index: 1;
 }
 
