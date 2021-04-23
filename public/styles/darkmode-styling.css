@@ -1,0 +1,115 @@
+/* DARK MODE CLASSES */
+
+/* FORM STYLE FOR THE TWEET INPUT AREA - DARK MODE */
+.tweet-text-dark {
+  color: #d3cfc8;
+  padding-left: 2%;
+  padding-top: 1%;
+  width: 100%;
+  font-weight: bolder;
+  background: transparent;
+  border: none;
+  outline: none;
+  resize: none;
+  border-radius: 15px;
+  box-shadow: inset 9px 9px 18px #13161e,
+  inset -9px -9px 18px #333c52;
+}
+
+/* TWEET BUTTON STYLING - DARK MODE */
+.tweeterbutton-dark {
+  padding: 10px;
+  border: none;
+  background: linear-gradient(145deg, #318f6b, #4dcc9b);
+  color: white;
+  font-family: 'Bungee';
+  border-radius: 15px;
+  box-shadow: inset 5px 5px 9px #318f6b, inset -5px -5px 9px #4dcc9b;
+  z-index: 1;
+}
+
+/* TWEET BUTTON HOVER EFFECT ANIMATION - DARK MODE */
+.tweeterbutton-dark:hover {
+  transform: translateY(-3px);
+  background: linear-gradient(145deg, #52daa6, #45b88c);
+  box-shadow:  5px 5px 9px #13161e, -5px -5px 9px #333c52;
+  z-index: 1;
+}
+
+/* TWEET BUTTON ACTIVE EFFECT WHEN CLICKED ON - DARK MODE */
+.tweeterbutton-dark:active {
+  transform: translateY(1px);
+  background: linear-gradient(145deg, #52daa6, #45b88c);
+  box-shadow: inset 5px 5px 9px #318f6b, inset -5px -5px 9px #4dcc9b;
+  z-index: 1;
+}
+
+/* CHARACTER COUNTER STYLING - DARK MODE */
+.counter-dark {
+  color: #F4F1EC;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+/* NAME AND USERNAME HEADER IN THE CONTAINER - DARK MODE */
+.tweet-thread-dark {
+  color: #F4F1EC;
+  margin:auto;
+  width: 98%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* USER AVATAR IMAGE AND NAME IN THE HEADER CONTAINER - DARK MODE */
+.user-dark {
+  color: #F4F1EC;
+  width: 40%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* POSTED TWEET FORMATTING IN THE CONTAINER - DARK MODE */
+.tweet-post-dark {
+  color: #F4F1EC;
+  font-weight: bold;
+  margin: auto;
+  margin-bottom: 0;
+  margin-top: 0;
+  width: 98%;
+  padding-bottom: 2%;
+  padding-left: 2%;
+  border-bottom: 2px solid #318f6b;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* CONTAINER FOR THE TWEETS ONCE POSTED - DARK MODE */
+.thread-container-dark {
+  margin: 30px 0px 30px 0px;
+  border-radius: 50px;
+  height: 240px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #232938;
+  box-shadow: inset 17px 17px 34px #13161e, inset -17px -17px 34px #333c52;
+}
+
+/* HOVER EFFECT FOR THE THREAD CONTAINER - DARK MODE */
+.thread-container-dark:hover {
+  transform: translateY(-3px);
+  background: linear-gradient(145deg, #252c3c, #202532);
+  box-shadow:  17px 17px 34px #13161e, -17px -17px 34px #333c52;
+}
+
+/* TIME STAMP IN THE FOOTER DOCUMENT - DARK MODE */
+.time-stamp-dark {
+  color: #F4F1EC;
+  padding-left: 2%;
+  font-size: 16px;
+}
