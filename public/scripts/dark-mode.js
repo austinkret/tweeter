@@ -15,7 +15,7 @@ $(document).ready(function() {
       $(".tweet-post-dark").toggleClass("tweet-post");
       $(".tweeterbutton-dark").toggleClass("tweeterbutton");
       $(".time-stamp-dark").toggleClass("time-stamp");
-      $(".tweet-text-dark").toggleClass("tweet-text");
+      $(".tweet-input-dark").toggleClass("tweet-input");
       $(".thread-container-dark").toggleClass("thread-container");
 
 
@@ -32,7 +32,7 @@ $(document).ready(function() {
       $(".tweet-post").toggleClass("tweet-post-dark");
       $(".tweeterbutton").toggleClass("tweeterbutton-dark");
       $(".time-stamp").toggleClass("time-stamp-dark");
-      $(".tweet-text").toggleClass("tweet-text-dark");
+      $(".tweet-input").toggleClass("tweet-input-dark");
       $(".thread-container").toggleClass("thread-container-dark");
     });
   }

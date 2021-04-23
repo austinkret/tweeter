@@ -1,7 +1,7 @@
 /* DARK MODE CLASSES */
 
 /* FORM STYLE FOR THE TWEET INPUT AREA - DARK MODE */
-.tweet-text-dark {
+.tweet-input-dark {
   color: #d3cfc8;
   padding-left: 2%;
   padding-top: 1%;
@@ -144,7 +144,7 @@
     margin-right: 80px;
   }
 
-  .tweet-text-dark {
+  .tweet-input-dark {
     font-size: large;
   }
 }

@@ -98,12 +98,12 @@ $(document).ready(function() {
     $('.warning').empty();
 
     // IF THE CHARACTER LENGTH EXCEEDS 140, APPEND WARNING LABEL
-    if ($('.tweet-text').val().length > 140) {
+    if ($('.tweet-input').val().length > 140) {
       return $('.warning').append('<span class="warning"><i class="fas fa-exclamation-triangle"></i>You are a little over the character limit... Try again... But in less words.</span>').hide().fadeIn();
     }
 
     // IF THERE INPUT IS EMPTY, APPEND WARNING CLASS
-    if (!$('.tweet-text').val().length) {
+    if (!$('.tweet-input').val().length) {
       return $('.warning').append('<span class="warning"><i class="fas fa-exclamation-triangle"></i>Well you gotta write something before you hit tweet!</span>').hide().fadeIn();
     }
 

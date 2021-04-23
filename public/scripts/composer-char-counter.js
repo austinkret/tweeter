@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  $(".tweet-text").keyup(function() {
+  $(".tweet-input").keyup(function() {
     const max = 140;
     let length = $(this).val().length;
     const counter = $(this).siblings("div").children("output");

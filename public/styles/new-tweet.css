@@ -10,7 +10,7 @@
 }
 
 /* FORM STYLE FOR THE TWEET INPUT AREA */
-.tweet-text {
+.tweet-input {
   color: #242F4D;
   padding-left: 2%;
   padding-top: 1%;
@@ -274,7 +274,7 @@ footer {
     padding: 0;
   }
 
-  .tweet-text {
+  .tweet-input {
     font-size: large;
   }
 
