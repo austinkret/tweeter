@@ -95,6 +95,8 @@ $(document).ready(function() {
           loadNewTweets();
           // RESET THE FORM TO EMPTY SO USER CAN TWEET AGAIN WITHOUT HAVING TO MANUALLY CLEAR THE FORM
           $('form')[0].reset();
+          // RESET THE COUNTER TO 140
+          $(".counter").text(140);
           // APPEND A SUCCESS MESSAGE SO USER KNOWS THEIR TWEET WAS SUCCESSFUL
           return $('.warning').append('<span class="success"><i class="fas fa-check-circle"></i>Success! Look below for your tweet!</span>').hide().fadeIn();
         });
