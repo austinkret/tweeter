@@ -53,7 +53,7 @@
 }
 
 /* NAME AND USERNAME HEADER IN THE CONTAINER - DARK MODE */
-.tweet-thread-dark {
+.tweet-header-dark {
   color: #F4F1EC;
   margin:auto;
   width: 98%;
@@ -132,7 +132,7 @@
     font-size: 80%;
   }
   
-  .tweet-thread-dark {
+  .tweet-header-dark {
     display: flex;
     align-items: center;
     flex-direction: column;

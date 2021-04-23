@@ -10,7 +10,7 @@ $(document).ready(function() {
     $(".darkmode").click(function() {
       $(".body-dark").toggleClass("body");
       $(".counter-dark").toggleClass("counter");
-      $(".tweet-thread-dark").toggleClass("tweet-thread");
+      $(".tweet-header-dark").toggleClass("tweet-header");
       $(".user-dark").toggleClass("user");
       $(".tweet-post-dark").toggleClass("tweet-post");
       $(".tweeterbutton-dark").toggleClass("tweeterbutton");
@@ -27,7 +27,7 @@ $(document).ready(function() {
     $(".darkmode").click(function() {
       $("body").toggleClass("body-dark");
       $(".counter").toggleClass("counter-dark");
-      $(".tweet-thread").toggleClass("tweet-thread-dark");
+      $(".tweet-header").toggleClass("tweet-header-dark");
       $(".user").toggleClass("user-dark");
       $(".tweet-post").toggleClass("tweet-post-dark");
       $(".tweeterbutton").toggleClass("tweeterbutton-dark");
