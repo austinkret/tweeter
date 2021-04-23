@@ -90,13 +90,13 @@
 
 /* SUCCESS STYLE FOR TWEET SUBMISSION */
 .success {
-    color: #45b88c;
-    font-family: 'Source Sans Pro';
-    font-weight: bold;
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    text-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  color: #45b88c;
+  font-family: 'Source Sans Pro';
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  text-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* SUCCESS ICON */
