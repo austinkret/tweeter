@@ -9,11 +9,6 @@
   width: 100%;
 }
 
-/* CONTAINER FOR ALL THE TWEETS IN THE THREAD */
-#tweets-container {
-  width: 100%;
-}
-
 /* FORM STYLE FOR THE TWEET INPUT AREA */
 .tweet-text {
   color: #242F4D;
@@ -64,7 +59,7 @@
 
 /* TWEET BUTTON ACTIVE EFFECT WHEN CLICKED ON */
 .tweeterbutton:active {
-  transform: translateY(-3px);
+  transform: translateY(1px);
   background: linear-gradient(145deg, #52daa6, #45b88c);
   box-shadow: inset 5px 5px 9px #318f6b, inset -5px -5px 9px #4dcc9b;
   z-index: 1;
@@ -105,7 +100,20 @@
     text-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+/* SUCCESS ICON */
+.fa-check-circle {
+  padding-right: 10px;
+}
 
+/* WARNING ICON */
+.fa-exclamation-triangle {
+  padding-right: 10px;
+}
+
+/* CONTAINER FOR ALL THE TWEETS IN THE THREAD */
+#tweets-container {
+  width: 100%;
+}
 
 /* CONTAINER FOR THE TWEETS ONCE POSTED */
 .thread-container {
@@ -148,8 +156,8 @@
 .avatar-thread {
   height: 80px;
   width: 80px;
-  margin-left: 4%;
-  margin-right: 5%;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 /* USERNAME ELEMENT IN THE HEADER OF THE CONTAINER */
@@ -190,7 +198,7 @@ footer {
 .icons {
   color: #48BF91;
   width: 120px;
-  padding-right: 10px;
+  padding-right: 30px;
   display: flex;
   flex-direction: row;
   align-items: flex-end;
@@ -218,16 +226,6 @@ footer {
   text-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* SUCCESS ICON */
-.fa-check-circle {
-  padding-right: 10px;
-}
-
-/* WARNING ICON */
-.fa-exclamation-triangle {
-  padding-right: 10px;
-}
-
 /* TIME STAMP IN THE FOOTER DOCUMENT */
 .time-stamp {
   padding-left: 2%;
@@ -239,6 +237,11 @@ footer {
   color: red;
 }
 
+
+
+
+
+/* RESPONSIVE DESIGN ELEMENTS */
 @media only screen and (min-width: 1024px) {
   .main-container {
     width: 65%;
