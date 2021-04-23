@@ -57,3 +57,24 @@ nav {
   transform: translateY(3px);
   text-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
+
+@media only screen and (min-width: 1024px) {
+  nav {
+    background-image: url("../images/header.background.png");
+    background-size: 80%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .logo {
+    font-size: x-large;
+  }
+
+  .write-new {
+    font-size: 0.7em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

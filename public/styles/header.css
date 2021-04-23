@@ -38,3 +38,71 @@
 .last-name {
   color: #48BF91;
 }
+
+@media only screen and (min-width: 1024px) {
+  .page-header {
+    width: 30%;
+    float: left;
+    height: 100vh;
+    position:fixed;
+    background-image: url("../images/header.background-vertical.png");
+    background-size: 120%;
+  }
+
+  .header-container {
+    position: fixed;
+    display: flex;
+    align-items: center;
+  }
+
+  .avatar {
+    height: 80%;
+    width: 80%;
+  }
+
+  .first-name {
+    font-size: 1em;
+    text-align: center;
+    margin: auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .last-name {
+    font-size: 1em;
+    text-align: center;
+    color: #48BF91;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .page-header {
+    height: 600px;
+    background-image: url("../images/header.background-vertical.png");
+    background-size: 90%;
+  }
+
+  .avatar {
+    margin-top: 15%;
+    height: 60%;
+    width: 60%;
+  }
+
+  .first-name {
+    font-size: 1em;
+    text-align: center;
+    margin: auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .last-name {
+    font-size: 1em;
+    text-align: center;
+    color: #48BF91;
+    flex-direction: column;
+  }
+}
