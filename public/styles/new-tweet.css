@@ -134,7 +134,7 @@
 }
 
 /* NAME AND USERNAME HEADER IN THE CONTAINER */
-.tweet-thread {
+.tweet-header {
   margin:auto;
   width: 98%;
   display: flex;
@@ -258,7 +258,7 @@ footer {
     font-size: 80%;
   }
   
-  .tweet-thread {
+  .tweet-header {
     display: flex;
     align-items: center;
     flex-direction: column;

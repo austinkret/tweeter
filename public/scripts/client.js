@@ -20,7 +20,7 @@ $(document).ready(function() {
     if (!body.classList.contains('body-dark')) {
       const $tweet =
   `<article class="thread-container">
-  <header class="tweet-thread">
+  <header class="tweet-header">
     <div class="user">
       <img class="avatar-thread" src="${tweetData.user.avatars}">
       <span class="name">${tweetData.user.name}</span>
@@ -41,7 +41,7 @@ $(document).ready(function() {
     } else {
       const $tweet =
       `<article class="thread-container thread-container-dark">
-      <header class="tweet-thread tweet-thread-dark">
+      <header class="tweet-header tweet-header-dark">
         <div class="user user-dark">
           <img class="avatar-thread" src="${tweetData.user.avatars}">
           <span class="name">${tweetData.user.name}</span>
