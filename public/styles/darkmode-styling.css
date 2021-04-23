@@ -113,3 +113,43 @@
   padding-left: 2%;
   font-size: 16px;
 }
+
+/* RESPONSIVE DESIGN ELEMENTS */
+
+/* DESKTOP FORMATTING, SCREENS ABOVE 1024PX */
+@media only screen and (min-width: 1024px) {
+  .main-container-dark {
+    width: 65%;
+    float: right;
+    margin-top: 150px;
+    margin-right: 2.5%;
+  }
+}
+
+/* MID-RANGE RE-FORMAT AT 550PX AND BELOW */
+@media only screen and (max-width: 550px) {
+  .tweet-post-dark {
+    font-size: 80%;
+  }
+  
+  .tweet-thread-dark {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .user-dark {
+    margin-right: 80px;
+  }
+
+  .tweet-text-dark {
+    font-size: large;
+  }
+}
+
+/* MAX CHARACTER LIMIT STYLING */
+.max-limit {
+  color: red;
+}
