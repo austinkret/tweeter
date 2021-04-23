@@ -13,6 +13,7 @@ Enjoy playing around with it!
 !["Screenshot of dark mode"](https://github.com/austinkret/tweeter/blob/master/docs/2.%20Dark%20Mode.png)
 !["Screenshot of validation error"](https://github.com/austinkret/tweeter/blob/master/docs/3.%20Validation%20Error.png)
 !["Screenshot of header on scroll"](https://github.com/austinkret/tweeter/blob/master/docs/4.%20Header%20on%20Scroll.png)
+!["Screenshot of dark mode success message"](https://github.com/austinkret/tweeter/blob/master/docs/5.%20Dark%20Mode%20Success.png)
 
 ## Getting Started
 
