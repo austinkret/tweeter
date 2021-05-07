@@ -92,7 +92,7 @@ $(document).ready(function() {
       });
   };
   // ON SUBMIT OF THE FORM FUNCTION
-  $('form').on('submit', function(event) {
+  $('form').on('submit', function(event) {3
     event.preventDefault();
     // ENSURE EMPTY WARNING CLASS
     $('.warning').empty();
